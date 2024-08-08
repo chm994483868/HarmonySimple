@@ -24,8 +24,9 @@ struct Second {
         .backgroundColor('#0D9FFB')
         .width('40%')
         .height('5%')
-        // 返回按钮绑定 onClick 事件，点击按钮时返回到第一页
+        // 返回按钮绑定 onClick 事件，点击按钮时返回到第一页 go
         .onClick(() => {
+          //@formatter:0ff
           console.info(`Succeeded in clicking the 'Back' button.`)
           try {
             // 返回第一页
@@ -37,6 +38,7 @@ struct Second {
 
             console.error(`Failed to return to the first page. Code is ${code}, message is ${message}`)
           }
+          //@formatter:on
         })
       }
       .width('100%')
@@ -44,3 +46,8 @@ struct Second {
     .height('100%')
   }
 }
+
+
+// int test(int a) {
+//   return 1;
+// }
